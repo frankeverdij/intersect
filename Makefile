@@ -10,7 +10,7 @@ FF = gfortran
 FFLAGS = -O3 -march=native
 #FFLAGS = -g -fbounds-check
 
-#OPENMPFLAGS = -openmp
+#OPENMPFLAGS = -qopenmp
 OPENMPFLAGS = -fopenmp
 #OPENMPFLAGS =
 
