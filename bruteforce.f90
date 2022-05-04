@@ -31,6 +31,7 @@ allocate(intersections(nin,2))
 !$OMP PARALLEL DEFAULT(NONE) SHARED(nin,intersections) &
 !$OMP FIRSTPRIVATE(nseg,rednode,bluenode,redsegment,bluesegment,nin_thread) &
 !$OMP PRIVATE(i,j,sect,node_red,cross,k,intersections_thread)
+nullify(intersections_thread)
 allocate(intersections_thread(nin_thread,2))
 k=0
 
